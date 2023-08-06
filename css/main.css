@@ -10,7 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+   html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
@@ -94,41 +94,74 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+/* color palette found at https://kdesign.co/blog/pastel-color-palette-examples/*/
 
 html {
-  background-color: #fff;
+  background-color: #FFF5E4;
   height: 100%;
+  font-size: 16px;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   height: 100%;
+  color: #fa9bcf;
+  font-weight: 400;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1.1875em;
+  background-color: #fff0f1;
   height: 300px;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
+  padding: 1.5%;
+  border: 5px solid #f4dbe9;
+  text-align: center;
+  overflow: auto;
+  margin: 0 0.5%;
+  font-weight: 600;
 }
 
+h1 {
+    font-family: 'Nunito';
+    font-size: 3em;
+    font-weight: 800;
+    color: #b0b5ed;
+}
 
+.lorem-info {
+    width: 95%;
+    margin: 3%;
+    text-align: center;
+}
+
+.lorem-info h1 {
+    width: 75%;
+    margin: 2% 12.5%;
+}
+
+.lorem-info p {
+    width: 75%;
+    margin: 0 12.5%;
+    background: #fff0f1;
+    padding: 1% 1.5%;
+    border: 0.5% solid #fff0f1;
+}
 
 
 /* ==========================================================================
