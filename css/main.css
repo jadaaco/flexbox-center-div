@@ -196,7 +196,7 @@ footer div div ul {
 footer div div ul li {
     list-style: none;
     display: inline-block;
-    width: 3.125;
+    width: 3.125em;
     justify-content: center;
     align-items: center;
 }
