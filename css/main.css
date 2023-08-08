@@ -96,71 +96,139 @@ textarea {
    ========================================================================== */
 /* color palette found at https://kdesign.co/blog/pastel-color-palette-examples/*/
 
+
+   /* color palette found at https://kdesign.co/blog/pastel-color-palette-examples/*/
+
 html {
-  background-color: #FFF5E4;
-  height: 100%;
-  font-size: 16px;
+    background-color: #fff5e4;
+    height: 100%;
+    font-size: 16px;
+    padding: 1% 2.5% 2.5% 2.5%;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
-  padding: 2em;
-  font-size: 1em;
-  height: 100%;
-  color: #fa9bcf;
-  font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 2em;
+    font-size: 1em;
+    height: 100%;
+    color: #fa9bcf;
+    font-weight: 400;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-}
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  
-  line-height: 1.5em;
-  font-size: 1.1875em;
-  background-color: #fff0f1;
-  height: 300px;
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5%;
-  border: 5px solid #f4dbe9;
-  text-align: center;
-  overflow: auto;
-  margin: 0 0.5%;
-  font-weight: 600;
+/*********************HEADER*********************/
+
+header {
+    margin: 0 1% 1% 1%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
 }
 
 h1 {
     font-family: 'Nunito';
-    font-size: 3em;
+    font-size: 5em;
     font-weight: 800;
     color: #b0b5ed;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.lorem-info {
-    width: 95%;
-    margin: 3%;
+header p {
+    font-weight: 700;
+    text-align: justify;
+}
+
+.wrapper {
+    /*add display:flex and set justify-content to space-between*/
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-1,
+.div-2,
+.div-3 {
+    /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+
+    line-height: 1.5em;
+    font-size: 1.1875em;
+    background-color: #fff0f1;
+    height: 300px;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5%;
+    border: 5px solid #f4dbe9;
+    border-radius: 20px;
     text-align: center;
+    overflow: auto;
+    margin: 0 0.5%;
+    font-weight: 600;
 }
 
-.lorem-info h1 {
-    width: 75%;
-    margin: 2% 12.5%;
+footer {
+    width: 100%;
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
 }
 
-.lorem-info p {
-    width: 75%;
-    margin: 0 12.5%;
-    background: #fff0f1;
-    padding: 1% 1.5%;
-    border: 0.5% solid #fff0f1;
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: #fbefda;
+}
+
+footer div div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div div ul li {
+    list-style: none;
+    display: inline-block;
+    width: 3.125;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-logos {
+    width: 3.125em;
+    height: 3.125em;
+}
+
+.twitter,
+.instagram {
+    margin-right: 20%;
+}
+
+/********************SCROLLBAR**********************/
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fbefda;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f4dbe9;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b0b5ed;
 }
 
 
@@ -230,8 +298,10 @@ h1 {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
@@ -245,9 +315,9 @@ h1 {
    ========================================================================== */
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -258,11 +328,13 @@ h1 {
    ========================================================================== */
 
 @media print {
+
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
