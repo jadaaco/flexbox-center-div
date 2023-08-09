@@ -97,19 +97,18 @@ textarea {
 /* color palette found at https://kdesign.co/blog/pastel-color-palette-examples/*/
 
 
-   /* color palette found at https://kdesign.co/blog/pastel-color-palette-examples/*/
+/* color palette found at https://kdesign.co/blog/pastel-color-palette-examples/*/
 
 html {
     background-color: #fff5e4;
     height: 100%;
     font-size: 16px;
-    padding: 1% 2.5% 2.5% 2.5%;
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    padding: 2em;
-    font-size: 1em;
+    padding: 0;
+    font-size: 16px;
     height: 100%;
     color: #fa9bcf;
     font-weight: 400;
@@ -119,26 +118,32 @@ body {
 /*********************HEADER*********************/
 
 header {
-    margin: 0 1% 1% 1%;
+    margin: 0;
     display: flex;
     flex-flow: column wrap;
-    text-align: center;
     font-size: 2em;
     width: 100%;
+    padding: 0;
 }
 
 h1 {
     font-family: 'Nunito';
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 800;
     color: #b0b5ed;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding-top: 5%;
+    padding-left: 1.5%;
+    width: 95%;
 }
 
 header p {
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 1em;
     text-align: justify;
+    margin: 0;
+    width: 95%;
+    padding: 1.5%;
 }
 
 .wrapper {
@@ -146,6 +151,7 @@ header p {
     font-weight: 400;
     display: flex;
     justify-content: space-between;
+    padding: 1% 5% 2.5% 5%;
 }
 
 .div-1,
@@ -164,7 +170,7 @@ header p {
     padding: 1.5%;
     border: 5px solid #f4dbe9;
     border-radius: 20px;
-    text-align: center;
+    text-align: justify;
     overflow: auto;
     margin: 0 0.5%;
     font-weight: 600;
@@ -172,44 +178,41 @@ header p {
 
 footer {
     width: 100%;
+    height: 15%;
     display: flex;
-    margin-top: 1%;
+    margin: 3% 0 0 0;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/hi-footer.png);
 }
 
 footer div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 0;
     width: 50%;
-    background: #fbefda;
 }
 
-footer div div ul {
+footer div ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-footer div div ul li {
+footer div ul li {
     list-style: none;
-    display: inline-block;
-    width: 3.125em;
+    width: 30%;
     justify-content: center;
-    align-items: center;
+    display: flex;
 }
 
 .social-logos {
-    width: 3.125em;
-    height: 3.125em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
-.twitter,
-.instagram {
-    margin-right: 20%;
-}
 
 /********************SCROLLBAR**********************/
 ::-webkit-scrollbar {
